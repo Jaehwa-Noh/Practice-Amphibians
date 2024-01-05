@@ -29,3 +29,12 @@ Take json which have information about Amphibians from server, and shows it to u
 ### Full screen (전체 화면)
 <img width="300" alt="Full screen of Amphibians app (양서류 앱 전체 화면)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/1aad0435-417b-43ae-bad2-24ee9e092fae">
 
+## Network API specifications (네트워크 API 명세서)
+### Amphibians API (양서류 API)
+|key|data type|
+|---|---------|
+|name|string|
+|type|string|
+|description|string|
+|img_src|string|
+
