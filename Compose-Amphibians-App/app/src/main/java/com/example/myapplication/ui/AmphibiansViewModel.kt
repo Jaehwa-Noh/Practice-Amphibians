@@ -28,15 +28,15 @@ class AmphibiansViewModel(
         getAmphibiansList()
     }
 
-    private fun getAmphibiansList() {
+    fun getAmphibiansList() {
         viewModelScope.launch {
             _amphibiansUiState.value = AmphibiansUiState.Loading
             _amphibiansUiState.value = try {
                 AmphibiansUiState.Success(amphibians = amphibiansInfoRepository.getAmphibiansInfo())
             } catch (e: IOException) {
-                AmphibiansUiState.Error
+                AmphibiansUiState.Error(e.localizedMessage ?: "")
             } catch (e: HttpException) {
-                AmphibiansUiState.Error
+                AmphibiansUiState.Error(e.localizedMessage ?: "")
             }
         }
     }
@@ -46,7 +46,7 @@ class AmphibiansViewModel(
             initializer {
                 val application = (this[APPLICATION_KEY] as AmphibiansApplication)
                 val amphibiansInfoRepository = application.container.amphibiansInfoRepository
-                AmphibiansListScreenViewModel(amphibiansInfoRepository = amphibiansInfoRepository)
+                AmphibiansViewModel(amphibiansInfoRepository = amphibiansInfoRepository)
             }
         }
     }
@@ -56,6 +56,6 @@ class AmphibiansViewModel(
 
 sealed interface AmphibiansUiState {
     data class Success(val amphibians: List<AmphibiansInfoApiModel>) : AmphibiansUiState
-    object Error : AmphibiansUiState
+    data class Error(val errorMessage: String) : AmphibiansUiState
     object Loading : AmphibiansUiState
 }
