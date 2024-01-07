@@ -12,9 +12,13 @@ import com.example.myapplication.R
 import com.example.myapplication.model.AmphibiansInfoApiModel
 
 @Composable
-fun AmphibiansListScreen(modifier: Modifier = Modifier) {
+fun AmphibiansListScreen(
+    modifier: Modifier = Modifier,
+    amphibiansList: List<AmphibiansInfoApiModel>
+) {
+
     LazyColumn(modifier = modifier) {
-        items(emptyList<AmphibiansInfoApiModel>()) {
+        items(amphibiansList) {
             AmphibiansListItem(amphibian = it)
         }
     }
