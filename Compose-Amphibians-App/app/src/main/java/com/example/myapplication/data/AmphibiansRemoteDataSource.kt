@@ -9,7 +9,7 @@ class AmphibiansRemoteDataSource(
     private val ioDispatcher: CoroutineDispatcher
 ) {
     suspend fun getAmphibiansInfo(): List<AmphibiansInfoAPIModel> {
-        withContext(ioDispatcher) {
+        return withContext(ioDispatcher) {
             amphibiansAPI.getAmphibiansInfo()
         }
     }

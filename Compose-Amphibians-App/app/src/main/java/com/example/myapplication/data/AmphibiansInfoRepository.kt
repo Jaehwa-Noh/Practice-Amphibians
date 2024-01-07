@@ -10,6 +10,6 @@ class NetworkAmphibiansInfoRepository(
     private val amphibiansApi: AmphibiansApi
 ) : AmphibiansInfoRepository {
     override suspend fun getAmphibiansInfo(): List<AmphibiansInfoAPIModel> {
-        amphibiansApi.getAmphibiansInfo()
+        return amphibiansApi.getAmphibiansInfo()
     }
 }
