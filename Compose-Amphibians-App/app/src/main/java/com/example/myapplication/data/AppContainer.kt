@@ -2,6 +2,7 @@ package com.example.myapplication.data
 
 import com.example.myapplication.network.AmphibiansApiService
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
@@ -20,11 +21,18 @@ class DefaultAppContainer : AppContainer {
         .baseUrl(baseUrl)
         .build()
 
-    private val retrofitService: AmphibiansApi by lazy {
+    private val amphibiansApi: AmphibiansApi by lazy {
         retrofit.create(AmphibiansApiService::class.java)
     }
 
+    private val amphibiansRemoteDataSource: AmphibiansRemoteDataSource by lazy {
+        AmphibiansRemoteDataSource(
+            amphibiansApi,
+            Dispatchers.IO
+        )
+    }
+
     override val amphibiansInfoRepository: AmphibiansInfoRepository by lazy {
-        NetworkAmphibiansInfoRepository(retrofitService)
+        NetworkAmphibiansInfoRepository(amphibiansRemoteDataSource)
     }
 }

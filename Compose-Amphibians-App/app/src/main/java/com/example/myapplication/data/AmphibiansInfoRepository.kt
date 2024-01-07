@@ -7,7 +7,7 @@ interface AmphibiansInfoRepository {
 }
 
 class NetworkAmphibiansInfoRepository(
-    private val amphibiansApi: AmphibiansApi
+    private val amphibiansApi : AmphibiansRemoteDataSource
 ) : AmphibiansInfoRepository {
     override suspend fun getAmphibiansInfo(): List<AmphibiansInfoAPIModel> {
         return amphibiansApi.getAmphibiansInfo()
