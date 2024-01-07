@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
 
-class AmphibiansListScreenViewModel(
+class AmphibiansViewModel(
     private val amphibiansInfoRepository: AmphibiansInfoRepository
 ) : ViewModel() {
 
