@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class AmphibiansInfoAPIModel(
+data class AmphibiansInfoApiModel(
     val name: String,
     val type: String,
     val description: String,

@@ -9,12 +9,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import com.example.myapplication.R
-import com.example.myapplication.model.AmphibiansInfoAPIModel
+import com.example.myapplication.model.AmphibiansInfoApiModel
 
 @Composable
 fun AmphibiansListScreen(modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier) {
-        items(emptyList<AmphibiansInfoAPIModel>()) {
+        items(emptyList<AmphibiansInfoApiModel>()) {
             AmphibiansListItem(amphibian = it)
         }
     }
@@ -23,7 +23,7 @@ fun AmphibiansListScreen(modifier: Modifier = Modifier) {
 @Composable
 fun AmphibiansListItem(
     modifier: Modifier = Modifier,
-    amphibian: AmphibiansInfoAPIModel
+    amphibian: AmphibiansInfoApiModel
 ) {
     Card(modifier = modifier) {
         Text(text = "${amphibian.name}(${amphibian.type}")
