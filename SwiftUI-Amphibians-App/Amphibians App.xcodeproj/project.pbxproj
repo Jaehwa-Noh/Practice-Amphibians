@@ -55,7 +55,7 @@
 		CF4AA2AE2B4C29C900210778 /* Amphibians App */ = {
 			isa = PBXGroup;
 			children = (
-				CFF66F492B4C2BD200188B6C /* Data */,
+				CFF66F492B4C2BD200188B6C /* Model */,
 				CFF66F452B4C2A8400188B6C /* UI */,
 				CF4AA2AF2B4C29C900210778 /* Amphibians_AppApp.swift */,
 				CF4AA2B32B4C29CB00210778 /* Assets.xcassets */,
@@ -81,12 +81,12 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		CFF66F492B4C2BD200188B6C /* Data */ = {
+		CFF66F492B4C2BD200188B6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CFF66F4A2B4C2BE200188B6C /* AmphibiansApiModel.swift */,
 			);
-			path = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
