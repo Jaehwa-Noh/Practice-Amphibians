@@ -6,7 +6,7 @@ This main branch is the main directory.
 
 there are 2 additional branchs for 1 practice, Compose and SwiftUI.   
    
-• [Compose branch]   
+• [Compose branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [SwiftUI branch]   
 
 
@@ -17,7 +17,7 @@ there are 2 additional branchs for 1 practice, Compose and SwiftUI.
 
 1개의 연습마다 컴포즈와 스위프트유아이 2개의 추가적인 브랜치가 있습니다.   
    
-• [컴포즈 브랜치]   
+• [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [스위프트유아이 브랜치]   
 
 
@@ -38,3 +38,9 @@ Take json which have information about Amphibians from server, and shows it to u
 |description|string|
 |img_src|string|
 
+# My Result (내 결과물)
+## Apps on device (프로젝트 실행 이미지)
+### Compose (컴포즈)
+| Loading (로딩) | Error (오류) | Amphibians List (양서류 목록) | Load Image (이미지 불러오기) |
+| :-----------: | :----------: | :-------------------------: | :-------------------------: |
+| <img width="300" alt="Loading (로딩)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/dd69f81a-2a48-4212-a950-2236bb34dd4b"> | <img width="300" alt="Error (오류)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/b26cc77b-ad9e-456a-80b0-3e0cd42880df"> | <img width="300" alt="Amphibians List (양서류 목록)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/34093b4e-c107-4ef5-b3c3-4497a994bcff"> | <img width="300" alt="Load Image (이미지 불러오기)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/f5ab12f0-6a00-43dc-9fc2-b0e6c767a958"> |
