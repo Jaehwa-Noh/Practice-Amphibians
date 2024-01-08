@@ -52,6 +52,8 @@ android {
 
 dependencies {
 
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
     implementation("io.coil-kt:coil-compose:2.5.0")
 
     val lifecycleVersion = "2.6.2"
