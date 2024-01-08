@@ -11,7 +11,7 @@ import SwiftUI
 struct Amphibians_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AmphibiansApp()
         }
     }
 }
