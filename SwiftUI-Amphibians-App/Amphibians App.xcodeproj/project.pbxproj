@@ -12,6 +12,7 @@
 		CF4AA2B42B4C29CB00210778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4AA2B32B4C29CB00210778 /* Assets.xcassets */; };
 		CF4AA2B72B4C29CB00210778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */; };
 		CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */; };
+		CFF66F4B2B4C2BE200188B6C /* AmphibiansApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F4A2B4C2BE200188B6C /* AmphibiansApiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CF4AA2B32B4C29CB00210778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansListInfoView.swift; sourceTree = "<group>"; };
+		CFF66F4A2B4C2BE200188B6C /* AmphibiansApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansApiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		CF4AA2AE2B4C29C900210778 /* Amphibians App */ = {
 			isa = PBXGroup;
 			children = (
+				CFF66F492B4C2BD200188B6C /* Data */,
 				CFF66F452B4C2A8400188B6C /* UI */,
 				CF4AA2AF2B4C29C900210778 /* Amphibians_AppApp.swift */,
 				CF4AA2B32B4C29CB00210778 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		CFF66F492B4C2BD200188B6C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CFF66F4A2B4C2BE200188B6C /* AmphibiansApiModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				CF4AA2B22B4C29C900210778 /* AmphibiansApp.swift in Sources */,
 				CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */,
+				CFF66F4B2B4C2BE200188B6C /* AmphibiansApiModel.swift in Sources */,
 				CF4AA2B02B4C29C900210778 /* Amphibians_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
