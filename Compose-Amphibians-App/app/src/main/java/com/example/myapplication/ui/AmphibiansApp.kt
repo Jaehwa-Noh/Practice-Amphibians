@@ -3,6 +3,7 @@ package com.example.myapplication.ui
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
@@ -19,7 +20,11 @@ fun AmphibiansApp(modifier: Modifier = Modifier) {
                 amphibiansViewModel.getAmphibiansList()
             })
 
-        is AmphibiansUiState.Loading -> LoadingScreen(modifier = modifier)
+        is AmphibiansUiState.Loading -> LoadingScreen(
+            modifier = modifier
+                .testTag("Progress")
+        )
+
         is AmphibiansUiState.Success -> AmphibiansListScreen(
             modifier = modifier,
             amphibiansList = (amphibiansUiState.value as AmphibiansUiState.Success).amphibians

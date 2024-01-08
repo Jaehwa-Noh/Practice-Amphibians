@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.SubcomposeAsyncImage
@@ -60,7 +61,8 @@ fun AmphibiansListItem(
                 contentDescription = null,
                 loading = {
                     CircularProgressIndicator(
-                        modifier = Modifier.wrapContentSize()
+                        modifier = Modifier
+                            .wrapContentSize()
                     )
                 },
                 error = {
@@ -74,7 +76,8 @@ fun AmphibiansListItem(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200.dp),
+                    .height(200.dp)
+                    .testTag(amphibian.name),
                 contentScale = ContentScale.Crop
             )
             Text(text = amphibian.description)
