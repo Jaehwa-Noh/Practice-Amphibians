@@ -8,14 +8,18 @@
 import SwiftUI
 
 protocol AmphibiansInfoRepository {
-    func getAmphibiansInfo() async -> [AmphibiansInfoApiModel]
+    func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel]
 }
 
 struct NetworkAmphibiansInfoRepository: AmphibiansInfoRepository {
     let amphibiansRemoteDataSource: AmphibiansRemoteDataSource
     
-    func getAmphibiansInfo() async -> [AmphibiansInfoApiModel] {
-        return await amphibiansRemoteDataSource.getAmphibiansInfo()
+    func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel] {
+        do {
+            return try await amphibiansRemoteDataSource.getAmphibiansInfo()
+        } catch {
+            throw error
+        }
     }
     
     

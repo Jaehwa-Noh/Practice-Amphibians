@@ -6,27 +6,39 @@
 //
 import SwiftUI
 
+enum AmphibiansApiServiceError: Error {
+    case NoData
+    case HttpError
+    case UrlError
+}
+
 struct AmphibiansApiService: AmphibiansApi {
     let baseURL: String
-    func getAmphibiansInfo() async -> [AmphibiansInfoApiModel] {
+    func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel] {
         let path = "amphibians"
         let url = URL(string: baseURL + path)
         guard let url = url else {
-            return [AmphibiansInfoApiModel]()
+            throw AmphibiansApiServiceError.UrlError
         }
+        
+        let urlSessionCofig = URLSessionConfiguration.default
+        urlSessionCofig.timeoutIntervalForRequest = 10
+        urlSessionCofig.timeoutIntervalForResource = 10
+        let urlSession = URLSession(configuration: urlSessionCofig)
+        
         var data: Data?
         var response: URLResponse?
         do {
-            (data, response) = try await URLSession.shared.data(from: url)
+            (data, response) = try await urlSession.data(from: url)
         } catch {
-            print(error.localizedDescription)
+            throw error
         }
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
-            return [AmphibiansInfoApiModel]()
+            throw AmphibiansApiServiceError.HttpError
         }
         guard let data = data else {
-            return [AmphibiansInfoApiModel]()
+            throw AmphibiansApiServiceError.NoData
         }
         
         let decoder = JSONDecoder()
@@ -34,9 +46,7 @@ struct AmphibiansApiService: AmphibiansApi {
             let responseAmphibians = try decoder.decode([AmphibiansInfoApiModel].self, from: data)
             return responseAmphibians
         } catch {
-            
+            throw error
         }
-        
-        return [AmphibiansInfoApiModel]()
     }
 }
