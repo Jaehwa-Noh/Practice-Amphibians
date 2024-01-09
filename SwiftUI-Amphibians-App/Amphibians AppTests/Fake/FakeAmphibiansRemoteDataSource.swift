@@ -6,7 +6,7 @@
 //
 
 @testable import Amphibians_App
-struct FakeAmphibiansRemoteDataSource {
+struct FakeAmphibiansRemoteDataSource: AmphibiansRemoteDataSource {
     let fakeAmphibiansApi: AmphibiansApi
     let ioTask: TaskPriority
     
