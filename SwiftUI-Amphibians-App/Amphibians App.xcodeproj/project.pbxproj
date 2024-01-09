@@ -15,6 +15,11 @@
 		CFBDEBE72B4D04E400EC59FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */; };
 		CFBDEBE92B4D211400EC59FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE82B4D211400EC59FA /* ErrorView.swift */; };
 		CFBDEBEB2B4D211D00EC59FA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBEA2B4D211D00EC59FA /* LoadingView.swift */; };
+		CFBDEC092B4D3A5C00EC59FA /* AmphibiansViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEC082B4D3A5C00EC59FA /* AmphibiansViewModelTest.swift */; };
+		CFBDEC0C2B4D3B8200EC59FA /* FakeAmphibiansInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEC0B2B4D3B8200EC59FA /* FakeAmphibiansInfoRepository.swift */; };
+		CFBDEC0E2B4D3C2700EC59FA /* FakeAmphibiansRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEC0D2B4D3C2700EC59FA /* FakeAmphibiansRemoteDataSource.swift */; };
+		CFBDEC102B4D40EF00EC59FA /* FakeAmphibiansApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEC0F2B4D40EF00EC59FA /* FakeAmphibiansApiService.swift */; };
+		CFBDEC142B4D57CF00EC59FA /* AmphibiansViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEC132B4D57CF00EC59FA /* AmphibiansViewTest.swift */; };
 		CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */; };
 		CFF66F4B2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F4A2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift */; };
 		CFF66F4E2B4C304E00188B6C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F4D2B4C304E00188B6C /* AppContainer.swift */; };
@@ -22,6 +27,23 @@
 		CFF66F522B4C312600188B6C /* AmphibiansRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F512B4C312600188B6C /* AmphibiansRemoteDataSource.swift */; };
 		CFF66F552B4C36D000188B6C /* AmphibiansApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F542B4C36D000188B6C /* AmphibiansApiService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFBDEBF42B4D384B00EC59FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4AA2A42B4C29C900210778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4AA2AB2B4C29C900210778;
+			remoteInfo = "Amphibians App";
+		};
+		CFBDEC032B4D385600EC59FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4AA2A42B4C29C900210778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4AA2AB2B4C29C900210778;
+			remoteInfo = "Amphibians App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CF4AA2AC2B4C29C900210778 /* Amphibians App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amphibians App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +55,13 @@
 		CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBDEBE82B4D211400EC59FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		CFBDEBEA2B4D211D00EC59FA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CFBDEBF02B4D384B00EC59FA /* Amphibians AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amphibians AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBDEBFD2B4D385600EC59FA /* Amphibians AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amphibians AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBDEC082B4D3A5C00EC59FA /* AmphibiansViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansViewModelTest.swift; sourceTree = "<group>"; };
+		CFBDEC0B2B4D3B8200EC59FA /* FakeAmphibiansInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAmphibiansInfoRepository.swift; sourceTree = "<group>"; };
+		CFBDEC0D2B4D3C2700EC59FA /* FakeAmphibiansRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAmphibiansRemoteDataSource.swift; sourceTree = "<group>"; };
+		CFBDEC0F2B4D40EF00EC59FA /* FakeAmphibiansApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAmphibiansApiService.swift; sourceTree = "<group>"; };
+		CFBDEC132B4D57CF00EC59FA /* AmphibiansViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansViewTest.swift; sourceTree = "<group>"; };
 		CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansListInfoView.swift; sourceTree = "<group>"; };
 		CFF66F4A2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansInfoApiModel.swift; sourceTree = "<group>"; };
 		CFF66F4D2B4C304E00188B6C /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -49,6 +78,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFBDEBED2B4D384B00EC59FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBDEBFA2B4D385600EC59FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				CF4AA2AE2B4C29C900210778 /* Amphibians App */,
+				CFBDEBF12B4D384B00EC59FA /* Amphibians AppTests */,
+				CFBDEBFE2B4D385600EC59FA /* Amphibians AppUITests */,
 				CF4AA2AD2B4C29C900210778 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				CF4AA2AC2B4C29C900210778 /* Amphibians App.app */,
+				CFBDEBF02B4D384B00EC59FA /* Amphibians AppTests.xctest */,
+				CFBDEBFD2B4D385600EC59FA /* Amphibians AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +144,33 @@
 				CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CFBDEBF12B4D384B00EC59FA /* Amphibians AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFBDEC0A2B4D3B6E00EC59FA /* Fake */,
+				CFBDEC082B4D3A5C00EC59FA /* AmphibiansViewModelTest.swift */,
+			);
+			path = "Amphibians AppTests";
+			sourceTree = "<group>";
+		};
+		CFBDEBFE2B4D385600EC59FA /* Amphibians AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFBDEC132B4D57CF00EC59FA /* AmphibiansViewTest.swift */,
+			);
+			path = "Amphibians AppUITests";
+			sourceTree = "<group>";
+		};
+		CFBDEC0A2B4D3B6E00EC59FA /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				CFBDEC0B2B4D3B8200EC59FA /* FakeAmphibiansInfoRepository.swift */,
+				CFBDEC0D2B4D3C2700EC59FA /* FakeAmphibiansRemoteDataSource.swift */,
+				CFBDEC0F2B4D40EF00EC59FA /* FakeAmphibiansApiService.swift */,
+			);
+			path = Fake;
 			sourceTree = "<group>";
 		};
 		CFF66F452B4C2A8400188B6C /* UI */ = {
@@ -157,6 +231,42 @@
 			productReference = CF4AA2AC2B4C29C900210778 /* Amphibians App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CFBDEBEF2B4D384B00EC59FA /* Amphibians AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBDEBF62B4D384B00EC59FA /* Build configuration list for PBXNativeTarget "Amphibians AppTests" */;
+			buildPhases = (
+				CFBDEBEC2B4D384B00EC59FA /* Sources */,
+				CFBDEBED2B4D384B00EC59FA /* Frameworks */,
+				CFBDEBEE2B4D384B00EC59FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFBDEBF52B4D384B00EC59FA /* PBXTargetDependency */,
+			);
+			name = "Amphibians AppTests";
+			productName = "Amphibians AppTests";
+			productReference = CFBDEBF02B4D384B00EC59FA /* Amphibians AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFBDEBFC2B4D385600EC59FA /* Amphibians AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBDEC052B4D385600EC59FA /* Build configuration list for PBXNativeTarget "Amphibians AppUITests" */;
+			buildPhases = (
+				CFBDEBF92B4D385600EC59FA /* Sources */,
+				CFBDEBFA2B4D385600EC59FA /* Frameworks */,
+				CFBDEBFB2B4D385600EC59FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFBDEC042B4D385600EC59FA /* PBXTargetDependency */,
+			);
+			name = "Amphibians AppUITests";
+			productName = "Amphibians AppUITests";
+			productReference = CFBDEBFD2B4D385600EC59FA /* Amphibians AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,11 +274,21 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					CF4AA2AB2B4C29C900210778 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					CFBDEBEF2B4D384B00EC59FA = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = CF4AA2AB2B4C29C900210778;
+					};
+					CFBDEBFC2B4D385600EC59FA = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = CF4AA2AB2B4C29C900210778;
 					};
 				};
 			};
@@ -186,6 +306,8 @@
 			projectRoot = "";
 			targets = (
 				CF4AA2AB2B4C29C900210778 /* Amphibians App */,
+				CFBDEBEF2B4D384B00EC59FA /* Amphibians AppTests */,
+				CFBDEBFC2B4D385600EC59FA /* Amphibians AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +319,20 @@
 			files = (
 				CF4AA2B72B4C29CB00210778 /* Preview Assets.xcassets in Resources */,
 				CF4AA2B42B4C29CB00210778 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBDEBEE2B4D384B00EC59FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBDEBFB2B4D385600EC59FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +358,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFBDEBEC2B4D384B00EC59FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBDEC0E2B4D3C2700EC59FA /* FakeAmphibiansRemoteDataSource.swift in Sources */,
+				CFBDEC0C2B4D3B8200EC59FA /* FakeAmphibiansInfoRepository.swift in Sources */,
+				CFBDEC092B4D3A5C00EC59FA /* AmphibiansViewModelTest.swift in Sources */,
+				CFBDEC102B4D40EF00EC59FA /* FakeAmphibiansApiService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBDEBF92B4D385600EC59FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBDEC142B4D57CF00EC59FA /* AmphibiansViewTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFBDEBF52B4D384B00EC59FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4AA2AB2B4C29C900210778 /* Amphibians App */;
+			targetProxy = CFBDEBF42B4D384B00EC59FA /* PBXContainerItemProxy */;
+		};
+		CFBDEC042B4D385600EC59FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4AA2AB2B4C29C900210778 /* Amphibians App */;
+			targetProxy = CFBDEC032B4D385600EC59FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CF4AA2B82B4C29CB00210778 /* Debug */ = {
@@ -404,6 +572,82 @@
 			};
 			name = Release;
 		};
+		CFBDEBF72B4D384B00EC59FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.sample.Amphibians-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amphibians App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Amphibians App";
+			};
+			name = Debug;
+		};
+		CFBDEBF82B4D384B00EC59FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.sample.Amphibians-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amphibians App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Amphibians App";
+			};
+			name = Release;
+		};
+		CFBDEC062B4D385600EC59FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.sample.Amphibians-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amphibians App";
+			};
+			name = Debug;
+		};
+		CFBDEC072B4D385600EC59FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.sample.Amphibians-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amphibians App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,6 +665,24 @@
 			buildConfigurations = (
 				CF4AA2BB2B4C29CB00210778 /* Debug */,
 				CF4AA2BC2B4C29CB00210778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBDEBF62B4D384B00EC59FA /* Build configuration list for PBXNativeTarget "Amphibians AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBDEBF72B4D384B00EC59FA /* Debug */,
+				CFBDEBF82B4D384B00EC59FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBDEC052B4D385600EC59FA /* Build configuration list for PBXNativeTarget "Amphibians AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBDEC062B4D385600EC59FA /* Debug */,
+				CFBDEC072B4D385600EC59FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
