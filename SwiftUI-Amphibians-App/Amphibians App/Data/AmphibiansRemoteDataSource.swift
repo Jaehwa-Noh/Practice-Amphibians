@@ -13,20 +13,17 @@ struct AmphibiansRemoteDataSource {
     
     func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel] {
         do {
-            do {
-                return try await Task.detached(priority: ioTask) {
-                    do {
-                        return try await amphibiansApi.getAmphibiansInfo()
-                    } catch {
-                        throw error
-                    }
-                }.result.get()
-            } catch {
-                throw error
-            }
+            return try await Task.detached(priority: ioTask) {
+                do {
+                    return try await amphibiansApi.getAmphibiansInfo()
+                } catch {
+                    throw error
+                }
+            }.result.get()
         } catch {
             throw error
         }
+
     }
 }
 
