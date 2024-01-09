@@ -7,7 +7,7 @@ This main branch is the main directory.
 there are 2 additional branchs for 1 practice, Compose and SwiftUI.   
    
 • [Compose branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
-• [SwiftUI branch]   
+• [SwiftUI branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
 
 
 ---
@@ -18,7 +18,7 @@ there are 2 additional branchs for 1 practice, Compose and SwiftUI.
 1개의 연습마다 컴포즈와 스위프트유아이 2개의 추가적인 브랜치가 있습니다.   
    
 • [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
-• [스위프트유아이 브랜치]   
+• [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
 
 
 ## Amphibians App (양서류 앱)
@@ -44,3 +44,8 @@ Take json which have information about Amphibians from server, and shows it to u
 | Loading (로딩) | Error (오류) | Amphibians List (양서류 목록) | Load Image (이미지 불러오기) |
 | :-----------: | :----------: | :-------------------------: | :-------------------------: |
 | <img width="200" alt="Loading (로딩)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/dd69f81a-2a48-4212-a950-2236bb34dd4b"> | <img width="200" alt="Error (오류)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/b26cc77b-ad9e-456a-80b0-3e0cd42880df"> | <img width="200" alt="Amphibians List (양서류 목록)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/34093b4e-c107-4ef5-b3c3-4497a994bcff"> | <img width="200" alt="Load Image (이미지 불러오기)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/f5ab12f0-6a00-43dc-9fc2-b0e6c767a958"> |
+
+### SwiftUI (스위프트유아이)
+| Loading (로딩) | Error (오류) | Amphibians List (양서류 목록) | Load Image (이미지 불러오기) |
+| :-----------: | :----------: | :-------------------------: | :-------------------------: |
+| <img width="200" alt="Loading (로딩)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/92a76fa8-746a-4b27-ae35-60c2ec371bc9"> | <img width="200" alt="Error (오류)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/53027fac-b401-4f76-819c-28265316d753"> | <img width="200" alt="Amphibians List (양서류 목록)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/34d4f507-9cdd-4fda-bcc8-34c386eae7e6"> | <img width="200" alt="Load Image (이미지 불러오기)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/e2d53b36-3b31-4d99-ae19-32b0eaa00b3e"> |
