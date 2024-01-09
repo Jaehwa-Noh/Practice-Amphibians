@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AmphibiansLisInfotView: View {
+    var amphibiansInfo: [AmphibiansInfoApiModel]
+    
     var body: some View {
         ScrollView {
             LazyVStack {
@@ -30,5 +32,5 @@ struct AmphibiansListItem: View {
 }
 
 #Preview {
-    AmphibiansLisInfotView()
+    AmphibiansLisInfotView(amphibiansInfo: [AmphibiansInfoApiModel]())
 }
