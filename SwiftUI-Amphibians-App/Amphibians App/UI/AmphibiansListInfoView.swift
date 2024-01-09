@@ -37,6 +37,7 @@ struct AmphibiansListItem: View {
                             .scaledToFill()
                             .frame(height: 200)
                             .clipped()
+                            .accessibilityIdentifier("\(amphibian.name)")
                     } else if phase.error != nil {
                         HStack {
                             Spacer()
