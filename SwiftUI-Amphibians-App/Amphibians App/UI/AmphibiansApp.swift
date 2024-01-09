@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct AmphibiansApp: View {
+    @StateObject private var amphibiansViewModel: AmphibiansViewModel
+    
+    init(appDelegate: AppDelegate) {
+        let amphibiansInfoRepository: AmphibiansInfoRepository = appDelegate.getAppContainer().amphibiansInfoRepository
+        
+        _amphibiansViewModel = StateObject(wrappedValue: AmphibiansViewModel(amphibiansInfoRepository: amphibiansInfoRepository))
+    }
+    
     var body: some View {
-        AmphibiansLisInfotView()
+        switch amphibiansViewModel.amphibiansViewState {
+        case .success(let amphibiansInfo):
+            AmphibiansLisInfotView(
+                amphibiansInfo: amphibiansInfo
+            )
+        case .loading:
+            LoadingView()
+        case .error(let errorMessage):
+            ErrorView(errorMessage: errorMessage, onRetryClick: amphibiansViewModel.getAmphibiansList)
+        }
     }
 }
 
 #Preview {
-    AmphibiansApp()
+    AmphibiansApp(appDelegate: AppDelegate())
 }
