@@ -13,6 +13,8 @@
 		CF4AA2B72B4C29CB00210778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */; };
 		CFBDEBE42B4CF72000EC59FA /* AmphibiansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE32B4CF72000EC59FA /* AmphibiansViewModel.swift */; };
 		CFBDEBE72B4D04E400EC59FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */; };
+		CFBDEBE92B4D211400EC59FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE82B4D211400EC59FA /* ErrorView.swift */; };
+		CFBDEBEB2B4D211D00EC59FA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBEA2B4D211D00EC59FA /* LoadingView.swift */; };
 		CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */; };
 		CFF66F4B2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F4A2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift */; };
 		CFF66F4E2B4C304E00188B6C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF66F4D2B4C304E00188B6C /* AppContainer.swift */; };
@@ -29,6 +31,8 @@
 		CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFBDEBE32B4CF72000EC59FA /* AmphibiansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansViewModel.swift; sourceTree = "<group>"; };
 		CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFBDEBE82B4D211400EC59FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CFBDEBEA2B4D211D00EC59FA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansListInfoView.swift; sourceTree = "<group>"; };
 		CFF66F4A2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansInfoApiModel.swift; sourceTree = "<group>"; };
 		CFF66F4D2B4C304E00188B6C /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				CF4AA2B12B4C29C900210778 /* AmphibiansApp.swift */,
 				CFF66F472B4C2B4100188B6C /* AmphibiansListInfoView.swift */,
 				CFBDEBE32B4CF72000EC59FA /* AmphibiansViewModel.swift */,
+				CFBDEBEA2B4D211D00EC59FA /* LoadingView.swift */,
+				CFBDEBE82B4D211400EC59FA /* ErrorView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 				CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */,
 				CFF66F4E2B4C304E00188B6C /* AppContainer.swift in Sources */,
 				CFF66F4B2B4C2BE200188B6C /* AmphibiansInfoApiModel.swift in Sources */,
+				CFBDEBEB2B4D211D00EC59FA /* LoadingView.swift in Sources */,
 				CFF66F552B4C36D000188B6C /* AmphibiansApiService.swift in Sources */,
 				CFF66F522B4C312600188B6C /* AmphibiansRemoteDataSource.swift in Sources */,
 				CF4AA2B02B4C29C900210778 /* Amphibians_AppApp.swift in Sources */,
 				CFBDEBE72B4D04E400EC59FA /* AppDelegate.swift in Sources */,
 				CFF66F502B4C309A00188B6C /* AmphibiansInfoRepository.swift in Sources */,
+				CFBDEBE92B4D211400EC59FA /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
