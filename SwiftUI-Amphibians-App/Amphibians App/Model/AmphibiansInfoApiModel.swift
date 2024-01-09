@@ -5,7 +5,7 @@
 //  Created by Jaehwa Noh on 1/8/24.
 //
 
-struct AmphibiansApiModel: Decodable {
+struct AmphibiansInfoApiModel: Decodable {
     let name: String
     let type: String
     let description: String

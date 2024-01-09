@@ -11,13 +11,15 @@ struct AmphibiansLisInfotView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                AmphibiansListItem()
+                AmphibiansListItem(amphibian: AmphibiansInfoApiModel(name: "", type: "", description: "", imgSrc: ""))
             }
         }
     }
 }
 
 struct AmphibiansListItem: View {
+    let amphibian: AmphibiansInfoApiModel
+    
     var body: some View {
         VStack {
             Text("")
