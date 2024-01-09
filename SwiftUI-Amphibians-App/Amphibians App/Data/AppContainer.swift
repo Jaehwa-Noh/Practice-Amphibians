@@ -15,7 +15,7 @@ class DefaultAppContainer: AppContainer {
     
     lazy var amphibiansApi = AmphibiansApiService(baseURL: baseURL)
     
-    lazy var amphibiansRemoteDataSource = AmphibiansRemoteDataSource(
+    lazy var amphibiansRemoteDataSource = NetworkAmphibiansDataSource(
         amphibiansApi: amphibiansApi,
         ioTask: .userInitiated
     )

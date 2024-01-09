@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct AmphibiansRemoteDataSource {
+protocol AmphibiansRemoteDataSource {
+    func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel]
+}
+
+struct NetworkAmphibiansDataSource: AmphibiansRemoteDataSource {
     let amphibiansApi: AmphibiansApi
     let ioTask: TaskPriority
     
