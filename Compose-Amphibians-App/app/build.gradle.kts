@@ -52,6 +52,9 @@ android {
 
 dependencies {
 
+    implementation("com.google.dagger:hilt-android:2.50")
+    annotationProcessor("com.google.dagger:hilt-compiler:2.50")
+
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 
     implementation("io.coil-kt:coil-compose:2.5.0")
