@@ -9,7 +9,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @Composable
 fun AmphibiansApp(modifier: Modifier = Modifier) {
     val amphibiansViewModel: AmphibiansViewModel =
-        viewModel(factory = AmphibiansViewModel.Factory)
+        viewModel()
     val amphibiansUiState = amphibiansViewModel.amphibiansUiState.collectAsState()
 
     when (amphibiansUiState.value) {

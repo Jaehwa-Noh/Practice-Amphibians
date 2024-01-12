@@ -9,15 +9,18 @@ import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.myapplication.AmphibiansApplication
 import com.example.myapplication.data.AmphibiansInfoRepository
 import com.example.myapplication.model.AmphibiansInfoApiModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
+import javax.inject.Inject
 
-class AmphibiansViewModel(
-    private val amphibiansInfoRepository: AmphibiansInfoRepository
+@HiltViewModel
+class AmphibiansViewModel @Inject constructor(
+    val amphibiansInfoRepository: AmphibiansInfoRepository
 ) : ViewModel() {
 
     private var _amphibiansUiState: MutableStateFlow<AmphibiansUiState> =
