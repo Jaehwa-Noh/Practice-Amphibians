@@ -3,6 +3,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("plugin.serialization")
     kotlin("kapt")
+    id("com.google.dagger.hilt.android")
+}
+
+hilt {
+    enableAggregatingTask = true
 }
 
 kapt {
