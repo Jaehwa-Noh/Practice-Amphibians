@@ -54,3 +54,9 @@ Take json which have information about Amphibians from server, and shows it to u
 | Loading (로딩) | Error (오류) | Amphibians List (양서류 목록) | Load Image (이미지 불러오기) |
 | :-----------: | :----------: | :-------------------------: | :-------------------------: |
 | <img width="200" alt="Loading (로딩)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/92a76fa8-746a-4b27-ae35-60c2ec371bc9"> | <img width="200" alt="Error (오류)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/53027fac-b401-4f76-819c-28265316d753"> | <img width="200" alt="Amphibians List (양서류 목록)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/34d4f507-9cdd-4fda-bcc8-34c386eae7e6"> | <img width="200" alt="Load Image (이미지 불러오기)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/e2d53b36-3b31-4d99-ae19-32b0eaa00b3e"> |
+
+
+## Problem Solve (문제 해결)
+### Compose (컴포즈)
+#### @HiltViewModel Unit test problem(@HiltViewModel 단위 테스트 문제)
+• [@HiltViewModel Unit test problem(@HiltViewModel 단위 테스트 문제)](https://github.com/google/dagger/issues/4212)
