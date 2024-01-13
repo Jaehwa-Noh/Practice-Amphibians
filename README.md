@@ -4,21 +4,26 @@ https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-amp
 Practice makes a master.   
 This main branch is the main directory.   
 
-there are 2 additional branchs for 1 practice, Compose and SwiftUI.   
+there are 4 additional branchs for 1 practice.   
+Compose, Compose-Hilt, SwiftUI and SwiftUI-Factory   
    
 • [Compose branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
+• [Compose-Hilt branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
 • [SwiftUI branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
-
+• [SwiftUI-Factory branch]
 
 ---
 
 연습이 장인을 만든다.   
 이 메인 브랜치는 메인 폴더입니다.
 
-1개의 연습마다 컴포즈와 스위프트유아이 2개의 추가적인 브랜치가 있습니다.   
+1개의 연습에 4개의 추가적인 브랜치가 있습니다.   
+컴포즈, 컴포즈-힐트, 스위프트유아이 그리고 스위프트유아이-펙토리   
    
 • [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
-• [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
+• [컴포즈-힐트 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
+• [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)    
+• [스위프트유아이-펙토리 브랜치]   
 
 
 ## Amphibians App (양서류 앱)
@@ -49,3 +54,9 @@ Take json which have information about Amphibians from server, and shows it to u
 | Loading (로딩) | Error (오류) | Amphibians List (양서류 목록) | Load Image (이미지 불러오기) |
 | :-----------: | :----------: | :-------------------------: | :-------------------------: |
 | <img width="200" alt="Loading (로딩)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/92a76fa8-746a-4b27-ae35-60c2ec371bc9"> | <img width="200" alt="Error (오류)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/53027fac-b401-4f76-819c-28265316d753"> | <img width="200" alt="Amphibians List (양서류 목록)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/34d4f507-9cdd-4fda-bcc8-34c386eae7e6"> | <img width="200" alt="Load Image (이미지 불러오기)" src="https://github.com/Jaehwa-Noh/Practice-Amphibians/assets/48680511/e2d53b36-3b31-4d99-ae19-32b0eaa00b3e"> |
+
+
+## Problem Solve (문제 해결)
+### Compose (컴포즈)
+#### @HiltViewModel Unit test problem(@HiltViewModel 단위 테스트 문제)
+• [@HiltViewModel Unit test problem(@HiltViewModel 단위 테스트 문제)](https://github.com/google/dagger/issues/4212)
