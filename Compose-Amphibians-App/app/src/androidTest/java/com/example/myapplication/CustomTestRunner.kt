@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.app.Application
 import android.content.Context
 import androidx.test.runner.AndroidJUnitRunner
+import dagger.hilt.android.testing.HiltTestApplication
 
 
 class CustomTestRunner : AndroidJUnitRunner() {
@@ -13,7 +14,7 @@ class CustomTestRunner : AndroidJUnitRunner() {
     ): Application {
         return super.newApplication(
             cl,
-            AmphibiansApplication::class.java.name,
+            HiltTestApplication::class.java.name,
             context
         )
     }
