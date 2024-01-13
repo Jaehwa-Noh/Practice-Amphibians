@@ -25,10 +25,12 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.myapplication"
+
         vectorDrawables {
             useSupportLibrary = true
         }
+
     }
 
     buildTypes {
@@ -61,6 +63,7 @@ android {
 }
 
 dependencies {
+    androidTestImplementation("androidx.test:runner:1.5.2")
 
     // For instrumentation tests
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.50")
