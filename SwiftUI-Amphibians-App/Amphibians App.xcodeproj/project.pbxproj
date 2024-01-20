@@ -150,7 +150,6 @@
 		CF994E282B5BB24B00094649 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				CF994E292B5BB33200094649 /* FactoryContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -215,6 +214,7 @@
 		CFF66F4C2B4C302900188B6C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CF994E292B5BB33200094649 /* FactoryContainer.swift */,
 				CFF66F4D2B4C304E00188B6C /* AppContainer.swift */,
 				CFF66F4F2B4C309A00188B6C /* AmphibiansInfoRepository.swift */,
 				CFF66F512B4C312600188B6C /* AmphibiansRemoteDataSource.swift */,
