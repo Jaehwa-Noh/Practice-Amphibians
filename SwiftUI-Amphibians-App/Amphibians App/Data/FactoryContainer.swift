@@ -8,6 +8,12 @@
 import Factory
 
 extension Container {
+    var amphibiansViewModel: Factory<AmphibiansViewModel> {
+        self {
+            AmphibiansViewModel()
+        }
+    }
+    
     var networkAmphibiansInfoRepository: Factory<AmphibiansInfoRepository> {
         self {
             NetworkAmphibiansInfoRepository()
