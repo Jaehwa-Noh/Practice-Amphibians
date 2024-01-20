@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Factory
 
 class AmphibiansViewModel: ObservableObject {
     @Published var amphibiansInfo: [AmphibiansInfoApiModel]
     @Published var amphibiansViewState: AmphibiansViewState = .loading
-    private let amphibiansInfoRepository: AmphibiansInfoRepository
+    @Injected(\.networkAmphibiansInfoRepository) var amphibiansInfoRepository
     
     enum AmphibiansViewState {
         case success([AmphibiansInfoApiModel])
@@ -18,9 +19,8 @@ class AmphibiansViewModel: ObservableObject {
         case error(String)
     }
     
-    init(amphibiansInfoRepository: AmphibiansInfoRepository) {
+    init() {
         self.amphibiansInfo = [AmphibiansInfoApiModel]()
-        self.amphibiansInfoRepository = amphibiansInfoRepository
         getAmphibiansList()
     }
     
