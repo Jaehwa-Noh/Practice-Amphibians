@@ -11,6 +11,8 @@
 		CF4AA2B22B4C29C900210778 /* AmphibiansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4AA2B12B4C29C900210778 /* AmphibiansApp.swift */; };
 		CF4AA2B42B4C29CB00210778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4AA2B32B4C29CB00210778 /* Assets.xcassets */; };
 		CF4AA2B72B4C29CB00210778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */; };
+		CF994E272B5B9A5900094649 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = CF994E262B5B9A5900094649 /* Factory */; };
+		CF994E2A2B5BB33200094649 /* FactoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF994E292B5BB33200094649 /* FactoryContainer.swift */; };
 		CFBDEBE42B4CF72000EC59FA /* AmphibiansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE32B4CF72000EC59FA /* AmphibiansViewModel.swift */; };
 		CFBDEBE72B4D04E400EC59FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */; };
 		CFBDEBE92B4D211400EC59FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDEBE82B4D211400EC59FA /* ErrorView.swift */; };
@@ -53,6 +55,7 @@
 		CF4AA2B12B4C29C900210778 /* AmphibiansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansApp.swift; sourceTree = "<group>"; };
 		CF4AA2B32B4C29CB00210778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF994E292B5BB33200094649 /* FactoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryContainer.swift; sourceTree = "<group>"; };
 		CFBDEBE32B4CF72000EC59FA /* AmphibiansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmphibiansViewModel.swift; sourceTree = "<group>"; };
 		CFBDEBE62B4D04E400EC59FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBDEBE82B4D211400EC59FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF994E272B5B9A5900094649 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +126,7 @@
 		CF4AA2AE2B4C29C900210778 /* Amphibians App */ = {
 			isa = PBXGroup;
 			children = (
+				CF994E282B5BB24B00094649 /* DI */,
 				CFBDEBE52B4D048800EC59FA /* Delegate */,
 				CFF66F532B4C36C100188B6C /* Network */,
 				CFF66F4C2B4C302900188B6C /* Data */,
@@ -140,6 +145,14 @@
 				CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF994E282B5BB24B00094649 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF994E292B5BB33200094649 /* FactoryContainer.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		CFBDEBE52B4D048800EC59FA /* Delegate */ = {
@@ -233,6 +246,9 @@
 			dependencies = (
 			);
 			name = "Amphibians App";
+			packageProductDependencies = (
+				CF994E262B5B9A5900094649 /* Factory */,
+			);
 			productName = "Amphibians App";
 			productReference = CF4AA2AC2B4C29C900210778 /* Amphibians App.app */;
 			productType = "com.apple.product-type.application";
@@ -307,6 +323,9 @@
 				Base,
 			);
 			mainGroup = CF4AA2A32B4C29C900210778;
+			packageReferences = (
+				CF994E252B5B9A5900094649 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = CF4AA2AD2B4C29C900210778 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF994E2A2B5BB33200094649 /* FactoryContainer.swift in Sources */,
 				CF4AA2B22B4C29C900210778 /* AmphibiansApp.swift in Sources */,
 				CFBDEBE42B4CF72000EC59FA /* AmphibiansViewModel.swift in Sources */,
 				CFF66F482B4C2B4100188B6C /* AmphibiansListInfoView.swift in Sources */,
@@ -696,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF994E252B5B9A5900094649 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF994E262B5B9A5900094649 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF994E252B5B9A5900094649 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF4AA2A42B4C29C900210778 /* Project object */;
 }
