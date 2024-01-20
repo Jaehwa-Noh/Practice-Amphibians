@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Factory
 
 protocol AmphibiansInfoRepository {
     func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel]
 }
 
 struct NetworkAmphibiansInfoRepository: AmphibiansInfoRepository {
-    let amphibiansRemoteDataSource: AmphibiansRemoteDataSource
+    @Injected(\.networkAmphibiansDataSource) var amphibiansRemoteDataSource: AmphibiansRemoteDataSource
     
     func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel] {
         do {
@@ -21,6 +22,4 @@ struct NetworkAmphibiansInfoRepository: AmphibiansInfoRepository {
             throw error
         }
     }
-    
-    
 }
