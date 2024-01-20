@@ -19,6 +19,7 @@ extension Container {
         self {
             NetworkAmphibiansDataSource()
         }
+        .singleton
     }
     
     var amphibiansApiService: Factory<AmphibiansApi> {
@@ -35,5 +36,4 @@ extension Container {
             .userInitiated
         }
     }
-    
 }
