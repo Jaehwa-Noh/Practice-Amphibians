@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import Factory
 
 protocol AmphibiansRemoteDataSource {
     func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel]
 }
 
 struct NetworkAmphibiansDataSource: AmphibiansRemoteDataSource {
-    let amphibiansApi: AmphibiansApi
-    let ioTask: TaskPriority
+    @Injected(\.amphibiansApiService) var amphibiansApi
+    @Injected(\.userInitiated) var ioTask
     
     func getAmphibiansInfo() async throws -> [AmphibiansInfoApiModel] {
         do {
