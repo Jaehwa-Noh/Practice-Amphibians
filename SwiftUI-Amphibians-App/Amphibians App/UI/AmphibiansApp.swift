@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Factory
 
 struct AmphibiansApp: View {
-    private var amphibiansViewModel: AmphibiansViewModel!
+    @InjectedObject(\.amphibiansViewModel) var amphibiansViewModel
     
     var body: some View {
         switch amphibiansViewModel.amphibiansViewState {
