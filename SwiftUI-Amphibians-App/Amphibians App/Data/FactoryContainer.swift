@@ -8,6 +8,13 @@
 import Factory
 
 extension Container {
+    var networkAmphibiansInfoRepository: Factory<AmphibiansInfoRepository> {
+        self {
+            NetworkAmphibiansInfoRepository()
+        }
+        .singleton
+    }
+    
     var networkAmphibiansDataSource: Factory<AmphibiansRemoteDataSource> {
         self {
             NetworkAmphibiansDataSource()
