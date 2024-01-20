@@ -24,6 +24,6 @@ extension Container {
             }
             return amphibiansInfoRepository
         }
+        .singleton
     }
 }
-
