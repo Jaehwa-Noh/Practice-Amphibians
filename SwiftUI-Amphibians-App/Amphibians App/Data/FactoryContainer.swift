@@ -8,6 +8,12 @@
 import Factory
 
 extension Container {
+    var networkAmphibiansDataSource: Factory<AmphibiansRemoteDataSource> {
+        self {
+            NetworkAmphibiansDataSource()
+        }
+    }
+    
     var amphibiansApiService: Factory<AmphibiansApi> {
         self {
             let baseURL = "https://android-kotlin-fun-mars-server.appspot.com/"
