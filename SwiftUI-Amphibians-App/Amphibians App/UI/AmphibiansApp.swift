@@ -8,13 +8,7 @@
 import SwiftUI
 
 struct AmphibiansApp: View {
-    @StateObject private var amphibiansViewModel: AmphibiansViewModel
-    
-    init(appDelegate: AppDelegate) {
-        let amphibiansInfoRepository: AmphibiansInfoRepository = appDelegate.getAppContainer().amphibiansInfoRepository
-        
-        _amphibiansViewModel = StateObject(wrappedValue: AmphibiansViewModel(amphibiansInfoRepository: amphibiansInfoRepository))
-    }
+    private var amphibiansViewModel: AmphibiansViewModel!
     
     var body: some View {
         switch amphibiansViewModel.amphibiansViewState {
@@ -31,5 +25,5 @@ struct AmphibiansApp: View {
 }
 
 #Preview {
-    AmphibiansApp(appDelegate: AppDelegate())
+    AmphibiansApp()
 }
