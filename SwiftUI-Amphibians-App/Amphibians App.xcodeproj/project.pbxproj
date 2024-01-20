@@ -122,7 +122,6 @@
 		CF4AA2AE2B4C29C900210778 /* Amphibians App */ = {
 			isa = PBXGroup;
 			children = (
-				CF994E282B5BB24B00094649 /* DI */,
 				CFF66F532B4C36C100188B6C /* Network */,
 				CFF66F4C2B4C302900188B6C /* Data */,
 				CFF66F492B4C2BD200188B6C /* Model */,
@@ -140,13 +139,6 @@
 				CF4AA2B62B4C29CB00210778 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CF994E282B5BB24B00094649 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DI;
 			sourceTree = "<group>";
 		};
 		CFBDEBF12B4D384B00EC59FA /* Amphibians AppTests */ = {
