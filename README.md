@@ -10,7 +10,7 @@ Compose, Compose-Hilt, SwiftUI and SwiftUI-Factory
 • [Compose branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [Compose-Hilt branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
 • [SwiftUI branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
-• [SwiftUI-Factory branch]
+• [SwiftUI-Factory branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-factory-amphibians-app)   
 
 ---
 
@@ -23,7 +23,7 @@ Compose, Compose-Hilt, SwiftUI and SwiftUI-Factory
 • [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [컴포즈-힐트 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
 • [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)    
-• [스위프트유아이-펙토리 브랜치]   
+• [스위프트유아이-펙토리 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-factory-amphibians-app)   
 
 
 ## Amphibians App (양서류 앱)
