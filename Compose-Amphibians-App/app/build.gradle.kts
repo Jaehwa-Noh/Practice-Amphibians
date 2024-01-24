@@ -60,6 +60,13 @@ android {
 }
 
 dependencies {
+
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.7")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.7")
+
+    implementation("io.ktor:ktor-client-core:2.3.7")
+    implementation("io.ktor:ktor-client-okhttp:2.3.7")
+
     androidTestImplementation("androidx.test:runner:1.5.2")
 
     // For instrumentation tests
