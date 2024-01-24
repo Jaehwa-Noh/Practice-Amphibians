@@ -2,16 +2,12 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     kotlin("plugin.serialization")
-    kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
 }
 
 hilt {
     enableAggregatingTask = true
-}
-
-kapt {
-    correctErrorTypes = true
 }
 
 android {
@@ -54,7 +50,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
@@ -68,20 +64,20 @@ dependencies {
 
     // For instrumentation tests
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.50")
-    kaptAndroidTest("com.google.dagger:hilt-compiler:2.50")
+    kspAndroidTest("com.google.dagger:hilt-compiler:2.50")
 
     // For local unit tests
     testImplementation("com.google.dagger:hilt-android-testing:2.50")
-    kaptTest("com.google.dagger:hilt-compiler:2.50")
+    kspTest("com.google.dagger:hilt-compiler:2.50")
 
     implementation("com.google.dagger:hilt-android:2.50")
-    kapt("com.google.dagger:hilt-compiler:2.50")
+    ksp("com.google.dagger:hilt-compiler:2.50")
 
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 
     implementation("io.coil-kt:coil-compose:2.5.0")
 
-    val lifecycleVersion = "2.6.2"
+    val lifecycleVersion = "2.7.0"
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleVersion")
 
@@ -94,7 +90,7 @@ dependencies {
 
 
     implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
     implementation("androidx.compose.ui:ui")
