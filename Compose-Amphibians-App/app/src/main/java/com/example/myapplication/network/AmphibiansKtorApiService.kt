@@ -16,6 +16,7 @@ import io.ktor.serialization.kotlinx.KotlinxSerializationConverter
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
+
 class AmphibiansKtorApiService @Inject constructor() : AmphibiansApi {
     private val client = HttpClient(OkHttp) {
         install(ContentNegotiation) {
