@@ -9,19 +9,23 @@ import io.ktor.client.plugins.ResponseException
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.plugins.defaultRequest
 import io.ktor.client.request.get
+import io.ktor.http.ContentType
 import io.ktor.http.URLProtocol
 import io.ktor.http.path
-import io.ktor.serialization.kotlinx.json.json
+import io.ktor.serialization.kotlinx.KotlinxSerializationConverter
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
 class AmphibiansKtorApiService @Inject constructor() : AmphibiansApi {
     private val client = HttpClient(OkHttp) {
         install(ContentNegotiation) {
-            json(
-                Json {
-                    ignoreUnknownKeys = true
-                }
+            register(
+                ContentType.Text.Plain,
+                KotlinxSerializationConverter(
+                    Json {
+                        ignoreUnknownKeys = true
+                    }
+                )
             )
         }
         defaultRequest {
