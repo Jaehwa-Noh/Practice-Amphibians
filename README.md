@@ -4,11 +4,12 @@ https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-amp
 Practice makes a master.   
 This main branch is the main directory.   
 
-there are 4 additional branchs for 1 practice.   
-Compose, Compose-Hilt, SwiftUI and SwiftUI-Factory   
+there are 5 additional branchs for 1 practice.   
+Compose, Compose-Hilt, Compose-Ktor, SwiftUI and SwiftUI-Factory   
    
 • [Compose branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [Compose-Hilt branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
+• [Compose-Ktor branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-ktor-amphibians-app)   
 • [SwiftUI branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)   
 • [SwiftUI-Factory branch](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-factory-amphibians-app)   
 
@@ -17,11 +18,12 @@ Compose, Compose-Hilt, SwiftUI and SwiftUI-Factory
 연습이 장인을 만든다.   
 이 메인 브랜치는 메인 폴더입니다.
 
-1개의 연습에 4개의 추가적인 브랜치가 있습니다.   
-컴포즈, 컴포즈-힐트, 스위프트유아이 그리고 스위프트유아이-펙토리   
+1개의 연습에 5개의 추가적인 브랜치가 있습니다.   
+컴포즈, 컴포즈-힐트, 컴포즈-케이토르, 스위프트유아이 그리고 스위프트유아이-펙토리   
    
 • [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-amphibians-app)   
 • [컴포즈-힐트 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-hilt-amphibians-app)   
+• [컴포즈-케이토르 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/compose-ktor-amphibians-app)   
 • [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-amphibians-app)    
 • [스위프트유아이-펙토리 브랜치](https://github.com/Jaehwa-Noh/Practice-Amphibians/tree/swiftui-factory-amphibians-app)   
 
