@@ -31,7 +31,7 @@ class AmphibiansKtorApiService @Inject constructor() : AmphibiansApi {
         defaultRequest {
             url {
                 protocol = URLProtocol.HTTPS
-                host = "https://android-kotlin-fun-mars-server.appspot.com/"
+                host = "android-kotlin-fun-mars-server.appspot.com/"
             }
         }
         expectSuccess = true
